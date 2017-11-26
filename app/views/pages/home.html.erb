@@ -1,0 +1,156 @@
+<div class="center jumbotron">
+  <h1>Jobboard</h1>
+    
+       <table role="main" style="margin-top:1em" width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tbody><tr>
+                <td>
+                    <img class="indeedLogo" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==" alt="Indeed Jobsuche" title="Indeed Jobsuche">
+                    </td>
+            </tr>
+            <tr>
+              <td>
+              	<form action="/Jobs" method="get" name="jobsearch" id="jobsearch" onsubmit="pf();formptk('form','where_ac','',['where_ac','what_ac'], ptk);formptk('form','what_ac','w',['where_ac','what_ac'], ptk);">
+                  <span id="hidden_colon" style="display:none;">:</span><table width="100%" cellspacing="0" cellpadding="3" align="center">
+                    <tbody><tr>
+                      <td class="npb"><label for="what" id="what_label_top" aria-hidden="true">was</label></td>
+                      <td class="npb" colspan="2"><label for="where" id="where_label_top" aria-hidden="true">wo</label></td>
+                    </tr>
+                      
+<tr>
+                      <td class="npl epr"><span class="inwrap"><input class="input_text" maxlength="512" size="31" aria-labelledby="what_label_top hidden_colon what_label_bot" name="q" autocomplete="off" id="what"></span><div style="width:250px"><!-- --></div></td>
+                      <td class="npl epr"><span class="inwrap"><input class="input_text" maxlength="64" size="27" aria-labelledby="where_label_top hidden_colon where_label_bot" name="l" autocomplete="off" id="where" value=""></span><div style="width:200px"><!-- --></div></td>
+                      <td class="npl" style="width:1px"><span class="inwrapBorder" style="width:auto;"><span class="inwrapBorderTop"><input id="fj" class="input_submit" value="Jobs finden" type="submit"></span></span></td>
+                    </tr>
+        <tr id="acr">
+                      <td><span class="h">&nbsp;</span></td>
+                      <td colspan="2" class="npl"><div style="position:relative;z-index:2"><iframe id="where_acacbgif" style="position: absolute; display: none;" tabindex="1000" width="379" height="242" frameborder="0"></iframe><div id="acdiv" class="acd" style="display: none;"></div></div></td>
+                    </tr>
+        <tr id="acr">
+                      <td colspan="3" class="npl"><div style="position:relative;z-index:2"><div id="what_acdiv" class="acd" style="display:none;"></div></div></td>
+                    </tr>
+        <tr valign="baseline">
+                      <td class="label"><label for="what" id="what_label_bot" aria-hidden="true">Stichwort, Jobtitel oder Unternehmen</label></td>
+                      <td class="label"><label for="where" id="where_label_bot" aria-hidden="true">Ort, Bundesland oder Postleitzahl</label></td>
+                      <td style="padding-top:0"><a class="sl" href="/advanced_search?l=Kassel"><%= link_to "Erweiterte Suche", advancedsearch_path %></a></td>
+                    </tr>
+                  </tbody></table>
+                  </form>
+                  <script type="text/javascript">document.forms.jobsearch.q.focus();</script>
+                  <br>
+
+
+<div class="icon-promo-container resPad">
+                <div class="icon-promo-container-inner ">
+                    <p id="resPromoDisplay" class="resume-promo">
+                        <a tabindex="-1" aria-hidden="true" href="/promo/resume" onclick="this.href = appendParamsOnce( this.href, '?from=hp2&amp;subfrom=rezprmstd&amp;trk.origin=homepage&amp;trk.variant=rezprmstd&amp;trk.tk=1bvk1q1gn9ncl8ct')"><span aria-hidden="true" role="img" class="new-ico"></span></a> <a href="/promo/resume" onclick="this.href = appendParamsOnce( this.href, '?from=hp2&amp;subfrom=rezprmstd&amp;trk.origin=homepage&amp;trk.variant=rezprmstd&amp;trk.tk=1bvk1q1gn9ncl8ct')" class="resume-promo-link"><b>Lebenslauf anlegen</b></a> - Einfache Bewerbung auf tausende Jobs.</p>
+
+                    <p class="post-jobs-promo">
+                            <span><a tabindex="-1" aria-hidden="true" href="/recruiting?hl=de&amp;cc=DE" onclick="this.href = appendParamsOnce(this.href, 'isid\x3dhome\x26ikw\x3dpostjobcta1')"><span aria-hidden="true" role="img" class="ico"></span></a>&nbsp;<a class="post-jobs-promo-link" href="/recruiting?hl=de&amp;cc=DE" onclick="this.href = appendParamsOnce(this.href, 'isid\x3dhome\x26ikw\x3dpostjobcta1')"><b>Arbeitgeber: Stelle schalten</b></a>&nbsp;- Finden Sie Ihren nächsten Mitarbeiter</span></p>
+                    </div>
+            </div>
+        <script type="text/javascript">
+    function jsall_loaded() {
+        
+
+        initProcessLeftoverDwellEntries();
+        
+    detectBrowserState('homepage', '1bvk1q1gn9ncl8ct');
+
+                    window.tk = "1bvk1q1gn9ncl8ct";
+                    initAutocomplete('where_ac', gbid('where'), gbid('acdiv'), '/rpc/suggest?from=hp&tk=1bvk1q1gn9ncl8ct', function () {
+                        formptk('form', 'where_ac', '', ['where_ac','what_ac'], ptk);
+                    }, gbid('where'));
+                
+                    initAutocomplete('what_ac', gbid('what'), gbid('what_acdiv'), '/rpc/suggest?what=true&from=hp&tk=1bvk1q1gn9ncl8ct', function () {
+                        formptk('form', 'what_ac', 'w', ['where_ac','what_ac'], ptk)
+                    }, gbid('what'));
+                
+    }
+</script>
+
+<script type="text/javascript">
+	function loadJSAsync( ) {
+		for ( var i = 0; i < arguments.length; i++ ) {
+			var url = arguments[i];
+			(function() {
+				var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+				s.async = true;
+				s.src = url;
+				el.parentNode.insertBefore(s, el);
+			})();
+		}
+	}
+</script>
+<meta name="ppstriptst" content="1">
+
+<script type="text/javascript">
+                    loadJSAsync('/s/f652d1c/jobsearch-all-compiled_de.js')
+                </script>
+            <script type="text/javascript">
+        function rpc(url, setd) { if (document.images) (new Image()).src=url+'&zr='+rand(); }
+        function rand() { return Math.floor(Math.random()*2147483647); }
+    </script>
+<div style="text-align:center;">
+        <div id="recPromoDisplay" style=""><a href="/recommendedjobs?" onmousedown="ptk('recjobs', '')" style="color:#00c;">Empfohlene Jobs</a> - <span class="nji recDecoration">7 neu</span></div>
+
+    <script type="text/javascript">
+        call_when_jsall_loaded(function() {
+            var recJobLink = new RecJobLink("Empfohlene Jobs", "recPromoDisplay", "1av9lsa0r916cfor", "1bvk1q1gn9ncl8ct",
+                    "DE", "de", "",
+                    "", null, true);
+            recJobLink.onLoad();
+        });
+    </script>
+
+</div>
+<div id="hp_welcome_message" style="text-align: center; margin: 1.25em 0px 0.4em; color: rgb(111, 111, 111); display: none;">
+    146.343 neue <a href="/Jobs">Jobs</a> in den letzten 7 Tagen<br>
+		Suche in Jobbörsen, Zeitungen, Verbänden und Karrierewebseiten von Unternehmen.</div>
+<style type="text/css">
+    #cookie-alert {
+        background: #e5f2ff;
+        font-size: 13px;
+    }
+    #cookie-alert-ok,#cookie-alert .cookie-alert-link {
+        text-decoration: underline !important;
+    }
+    #cookie-alert-ok:visited,#cookie-alert .cookie-alert-link {
+        color: #00c !important;
+    }
+
+</style>
+
+<style type="text/css">
+    #cookie-alert-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    #cookie-alert {
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+        margin: 10px auto 0px;
+        text-align: center;
+        white-space: normal;
+        line-height: 20px;
+        max-width: 550px;
+    }
+    #cookie-alert #cookie-alert-ok,
+    #cookie-alert #cookie-alert-ok:visited {
+        text-decoration: underline;
+        color: #00c;
+    }
+
+</style>
+
+<div id="cookie-alert-container">
+    <div id="cookie-alert">
+        Cookies helfen uns bei der Bereitstellung unserer Dienste. Unsere <a href="/legal?hl=de#cookies">Richtlinien zur Verwendung von Cookies</a> erklären, wie wir Cookies verwenden und wie Sie diese deaktivieren können.<br>
+        <a href="/legal?hl=de#cookies" target="_blank" rel="noopener" class="cookie-alert-link">Erfahren Sie mehr</a>&nbsp;·&nbsp;<a id="cookie-alert-ok" class="cookie-alert-link" href="/?calert=1">OK</a>
+    </div>
+</div>
+</td>
+    </tr>
+</tbody>
+</table>
+</div>

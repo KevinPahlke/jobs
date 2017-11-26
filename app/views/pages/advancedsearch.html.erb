@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<style type="text/css">
+    body { margin-top: 0; margin-left: 0; margin-right: 0; padding-top: 0; padding-right: 0; padding-left: 0; }
+
+    #g_nav { border-bottom:1px solid #ccc; margin-bottom:9px; }
+
+    #g_nav a,
+    #g_nav a:visited { color: #00c; }
+
+    .navBi { display: -moz-inline-box; display: inline-block; padding: 9px 12px; margin: 0; list-style-type: none; }
+</style>
+<div id="g_nav" data-tn-section="globalNav" role="navigation" class="left">
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+            <td nowrap="">
+            <style type="text/css">
+#p_nav a.selected { font-weight: bold; text-decoration:none; color: #000 !important; }
+</style>
+
+</td>
+            <td align="right" nowrap=""><style type="text/css">
+    
+
+    #navpromo a,
+    #navpromo a:visited {
+        color: #f60;
+    }
+
+    
+    #u_nav .login_unconfirmed,
+    #u_nav .login_unconfirmed a,
+    #u_nav .login_unconfirmed a:visited {
+        color: #c00
+    }
+
+    #u_nav .resume_pending,
+    #u_nav .resume_pending a,
+    #u_nav .resume_pending a:visited {
+        color: #c00
+    }
+
+    #userOptionsLabel {
+        position: relative;
+        z-index: 5;
+    }
+
+    #userOptionsLabel b {
+        cursor: pointer;
+        text-decoration: underline;
+        position: relative;
+        z-index: 5;
+    }
+
+    #userOptionsLabel:active {
+        outline: none;
+    }
+
+    #userOptionsLabel.active {
+        padding: 9px 11px;
+        margin-bottom: -1px;
+        _margin-bottom: 0px;
+        border: 1px solid #ccc;
+        border-top: 0;
+    }
+
+    #userOptionsLabel.active .arrowStub {
+        border-width: 0 3px 3px;
+        _border-width: 0px 3px 4px;
+        border-color: transparent;
+        border-bottom-color: #666;
+        top: -2px;
+        border-style: dashed dashed solid;
+    }
+
+    #userOptionsLabel.active .halfPxlFix {
+        background: #fff;
+        bottom: -3px;
+        height: 6px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        border: 1px solid #fff;
+    }
+
+    .arrowStub {
+        position: relative;
+        border-style: solid dashed dashed;
+        border-color: transparent;
+        border-top-color: #666;
+        display: -moz-inline-box;
+        display: inline-block;
+        font-size: 0;
+        height: 0;
+        line-height: 0;
+        width: 0;
+    left: 4px;
+        border-top-width: 3px;
+        border-bottom-width: 0;
+        border-right-width: 3px;
+        padding-top: 1px;
+        top: -1px;
+    }
+
+    #userOptions {
+        z-index: 2;
+        visibility: hidden;
+        position: absolute;
+    right: 0;
+        x_right: -1px;
+        top: 100%;
+        padding: 9px 15px;
+        border: 1px solid #ccc;
+        background: #fff;
+        min-width: 150px;
+        _width: 150px;
+        text-align: left;
+    }
+
+    #userOptions.open {
+        visibility: visible;
+    }
+
+    .userOptionItem {
+        margin: 6px 0;
+    }
+
+    .userOptionItem a {
+        white-space: nowrap;
+    }
+
+    .userOptionGroup {
+        border-top: 1px solid #e8e8e8;
+        margin-top: 12px;
+    }
+
+    .userNameRepeat {
+        color: #a8a8a8;
+        padding-right: 48px;
+        font-weight: bold;
+    }
+
+    .userOptionGroupHeader {
+        font-weight: bold;
+        margin: 6px 0;
+    }
+
+    </style>
+<div id="u_nav">
+    <script>
+
+function regExpEscape(s) {
+    return String(s).replace(/([-()\[\]{}+?*.$\^|,:#<!\\])/g, '\\$1').
+            replace(/\x08/g, '\\x08');
+}
+
+
+function appendParamsOnce(url, params) {
+    var useParams = params.replace(/^(\?|\&)/, '');
+    if (url.match(new RegExp('[\\?|\\&]' + regExpEscape(useParams))) == null) {
+        return url += (url.indexOf('?') > 0 ? '&' : '?' ) + useParams;
+    }
+    return url;
+}
+
+</script>
+
+</div>
+</td>
+        </tr>
+    </tbody></table>
+    </div>
+<a href="/" title="job search"><img class="indeedLogo" src="data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEHAAIALAAAAAABAAEAAAICVAEAOw==" alt="Ein Klick. Alle Jobs. Indeed" title="Ein Klick. Alle Jobs. Indeed"></a>
+        <div class="separator_top">&nbsp;</div>
+    <form name="sf" action="/Jobs" method="GET">
+    <table align="center" cellspacing="0" cellpadding="3" border="0">
+        <tbody><tr>
+            <td><h1>Erweiterte Jobsuche</h1></td>
+        </tr>
+        <tr>
+            <td>
+            <table cellspacing="0" cellpadding="3" border="0">
+                <tbody><tr><td class="header" colspan="2">Stellenangebote finden</td></tr>
+                <tr>
+                    <td width="150" nowrap=""><label for="as_and">mit <b>allen</b> Wörtern</label></td>
+<td>
+                        <input id="as_and" name="as_and" size="35" maxlength="512" value="" autocomplete="off" type="text">
+                        <div style="position:relative;z-index:2"><div id="what_acdiv" class="acd" style="display:none;"></div></div>
+                    </td>
+    </tr>
+
+                <tr>
+                    <td nowrap=""><label for="as_phr">mit der <b>genauen Wortgruppe</b></label></td>
+                    <td><input id="as_phr" name="as_phr" size="35" maxlength="512" value="" type="text"></td>
+                </tr>
+                <tr>
+                    <td nowrap=""><label for="as_any">mit <b>mindestens einem</b> dieser Wörter</label></td>
+                    <td><input id="as_any" name="as_any" size="35" maxlength="512" value="" type="text"></td>
+                </tr>
+                <tr>
+                    <td nowrap=""><label for="as_not"><b>ohne</b> diese Wörter</label></td>
+                    <td><input id="as_not" name="as_not" size="35" maxlength="512" value="" type="text"></td>
+                </tr>
+                <tr>
+                    <td nowrap=""><label for="as_ttl">Mit diesen Wörtern im <b>Titel</b></label></td>
+                    <td><input id="as_ttl" name="as_ttl" size="35" maxlength="512" value="" type="text"></td>
+                </tr>
+                <tr>
+                    <td nowrap=""><label for="as_cmp">Von diesem <b>Unternehmen</b></label></td>
+                    <td><input id="as_cmp" name="as_cmp" size="35" maxlength="512" value="" type="text"></td>
+                </tr>
+            <tr>
+                    <td nowrap=""><label for="st">Zeige Stellenangebote von</label></td>
+                    <td>
+                        <select id="st" name="st">
+                            <option value="">Allen Webseiten</option>
+                            <option value="jobsite">nur von Jobbörsen</option>
+                            <option value="employer">nur von Karrierewebseiten</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="">&nbsp;</td>
+                    <td>
+                        <input id="norecruiters" name="sr" value="directhire" type="checkbox">&nbsp;<label for="norecruiters">Ausschluss von Personalvermittlungen</label>
+                    </td>
+                </tr>
+            <tr><td class="header" colspan="2">Wo und Wann</td></tr>
+                <tr>
+                    <td style="padding:5px 3px;" colspan="1" nowrap="">
+                        <label for="radius"><b>Einsatzort</b></label>&nbsp;
+                        <select id="radius" name="radius">
+                        <option value="0">nur in</option><option value="10">im Umkreis von 10 Kilometern</option>
+                                <option selected="" value="25">im Umkreis von 25 Kilometern</option>
+                                <option value="50">im Umkreis von 50 Kilometern</option>
+                                <option value="75">im Umkreis von 75 Kilometern</option>
+                                <option value="100">im Umkreis von 100 Kilometern</option>
+                                </select>&nbsp;
+                    </td>
+<td>
+                        <input id="where" name="l" size="28" maxlength="250" value="Kassel" autocomplete="off" type="text">&nbsp;(Ort, Bundesland oder Postleitzahl)
+                    </td>
+    </tr>
+<tr><td></td><td class=""><div style="position:relative;z-index:2"><div id="acdiv" class="acd" style="display:none;"></div></div></td></tr>
+    <tr>
+                    <td style="padding:5px 3px;" colspan="2" nowrap="">
+                        <b>Anzeigenalter</b> - <label for="fromage">Jobs hinzugefügt</label>&nbsp;
+                        <select id="fromage" name="fromage">
+                            <option value="any">egal wann</option>
+                            <option value="15">innerhalb der letzten 15 Tage</option>
+                            <option value="7">innerhalb der letzten 7 Tage</option>
+                            <option value="3">innerhalb der letzten 3 Tage</option>
+                            <option value="1">seit gestern</option>
+                            <option value="last">seit meinem letzten Besuch</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:5px 3px;" colspan="2" nowrap="">
+                        <label for="limit"><b>Suchergebnisse</b></label>&nbsp;
+                        <select id="limit" name="limit">
+                            <option selected="" value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="50">50</option>
+                            </select>
+                        &nbsp;pro Seite,&nbsp;<label for="sort">sortiert nach</label>&nbsp;
+                        <select id="sort" name="sort">
+                            <option selected="" value="">Relevanz</option>
+                            <option value="date">Datum</option>
+                        </select>
+                        &nbsp;&nbsp;&nbsp;
+                        <span class="inwrapBorder" style="width:auto;">
+                            <span class="inwrapBorderTop">
+                                <input id="fj" class="input_submit" value="Jobs finden" type="submit">
+                            </span>
+                        </span>
+                    </td>
+                </tr>
+            </tbody></table>
+            </td>
+        </tr>
+    </tbody></table>
+    <input name="psf" value="advsrch" type="hidden">
+</form>
+
+<script type="text/javascript">
+
+        initAutocomplete('where_ac', gbid('where'), gbid('acdiv'), '/rpc/suggest?from=advancedsearch&tk=', function() { formptk('advancedsearch','where_ac', '', ['where_ac','what_ac'], ptk); }, gbid('where'));
+        
+        initAutocomplete('what_ac', gbid('as_and'), gbid('what_acdiv'), '/rpc/suggest?what=true&from=advancedsearch&tk=',
+                function () {formptk('advancedsearch', 'what_ac', '', ['where_ac','what_ac'], ptk);}, gbid('as_and'));
+        </script>
+
+<div class="separator_bottom">&nbsp;</div>
+<br>
+<div role="contentinfo" class="footer" style="clear:both" align="center">
+
+    <span class="footerLinks">
+
+    <div id="footerMainLinks">
+    <a href="/" title="Stellenangebote" id="jobs_product_link">Stellenangebote</a> - <script type="text/javascript">
+        var jobsProductLink = document.getElementById('jobs_product_link');
+        </script>
+
+
+    <a href="/Jobs">Jobs finden</a> - <a href="/browsejobs">Jobs durchsuchen</a> - <a href="/publisher">API</a> - <a href="http://blog.de.indeed.com">Blog</a> - <a href="/intl/de/about.html"><span class="no-wrap">Über uns</span></a>
+     - <a href="/about/our-company">Impressum</a> - <a href="https://indeed.zendesk.com/hc/de">Indeed-Hilfebereich</a>
+    
+</div>
+    <style type="text/css">
+    #cookie-alert {
+        background: #e5f2ff;
+        font-size: 13px;
+    }
+    #cookie-alert-ok,#cookie-alert .cookie-alert-link {
+        text-decoration: underline !important;
+    }
+    #cookie-alert-ok:visited,#cookie-alert .cookie-alert-link {
+        color: #00c !important;
+    }
+
+</style>
+
+<style type="text/css">
+    #cookie-alert-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    #cookie-alert {
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+        margin: 10px auto 0px;
+        text-align: center;
+        white-space: normal;
+        line-height: 20px;
+        max-width: 550px;
+    }
+    #cookie-alert #cookie-alert-ok,
+    #cookie-alert #cookie-alert-ok:visited {
+        text-decoration: underline;
+        color: #00c;
+    }
+
+</style>
+
+<div id="cookie-alert-container">
+    <div id="cookie-alert">
+        Cookies helfen uns bei der Bereitstellung unserer Dienste. Unsere <a href="/legal?hl=de#cookies">Richtlinien zur Verwendung von Cookies</a> erklären, wie wir Cookies verwenden und wie Sie diese deaktivieren können.<br>
+        <a href="/legal?hl=de#cookies" target="_blank" rel="noopener" class="cookie-alert-link">Erfahren Sie mehr</a>&nbsp;·&nbsp;<a id="cookie-alert-ok" class="cookie-alert-link" href="/advanced_search?l=Kassel&amp;calert=1">OK</a>
+    </div>
+</div>
+<style type="text/css">
+        #footerLegal {
+            margin-top: 15px;
+            font-size: 9pt;
+            
+        }
+    </style>
+
+</span></div>
+
+<br class="footerBreak">
+<script type="text/javascript">
+PENDING_ANALYTICS_VARS = window.PENDING_ANALYTICS_VARS || [];
+PENDING_ANALYTICS_VARS[PENDING_ANALYTICS_VARS.length] = ['_setCustomVar', 5, 'loggedIn', 'false', 3];
+</script>
+<script type="text/javascript">
+        var ga_domains = [];
+        ga_domains.push('indeed.co.in');ga_domains.push('indeed.lu');ga_domains.push('indeed.fr');ga_domains.push('indeed.de');ga_domains.push('indeed.com.br');ga_domains.push('indeed.co.uk');ga_domains.push('indeed.hk');ga_domains.push('indeed.fi');ga_domains.push('indeed.pt');ga_domains.push('indeed.jp');ga_domains.push('indeed.com');ga_domains.push('indeed.com.sg');ga_domains.push('indeed.nl');ga_domains.push('indeed.com.pk');ga_domains.push('indeed.cl');ga_domains.push('indeed.es');ga_domains.push('indeed.co.ve');ga_domains.push('indeed.ae');ga_domains.push('indeed.com.mx');ga_domains.push('indeed.com.my');ga_domains.push('indeed.ch');ga_domains.push('indeed.com.co');ga_domains.push('indeed.com.ph');ga_domains.push('indeed.co.za');ga_domains.push('indeed.ie');ga_domains.push('indeed.com.au');ga_domains.push('indeed.ca');ga_domains.push('indeed.com.pe');
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        var ga = ga || [];
+        ga('create', 'UA-90780-1', 'auto', {
+            'allowLinker': true
+        });
+        ga('require', 'linkid');
+        ga('require', 'linker');
+        ga('linker:autoLink', ga_domains, false, true);
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+
+        
+        (function () {
+            if (window.PENDING_ANALYTICS_VARS && window.PENDING_ANALYTICS_VARS.length > 0) {
+                for (var i in PENDING_ANALYTICS_VARS) {
+                    ga('set', PENDING_ANALYTICS_VARS[i][2], PENDING_ANALYTICS_VARS[i][3]);
+                }
+            }
+        })();
+    </script>
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '579216298929618');
+    fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=579216298929618&ev=PageView&noscript=1"
+/></noscript>
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6486505", c4:"de.indeed.com/advanced_search", c15:"1av9lsa0r916cfor"});
+(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=6486505&c4=de.indeed.com%2Fadvanced_search&c15=1av9lsa0r916cfor&cv=2.0&cj=1" style="display:none" width="0" height="0" alt=""/>
+</noscript>
+
+
+
+</html>
