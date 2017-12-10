@@ -6,6 +6,11 @@ class UsersController < ApplicationController
         @users = User.paginate(page: params[:page], per_page: 5)
     end
     
+    def login
+    @user = User.koala(request.env['omniauth.auth']['credentials'])
+    end
+
+    
     def new
     @user = User.new
     end
@@ -28,7 +33,7 @@ class UsersController < ApplicationController
        
         if @user.update(user_params)
             flash[:success] = "Your account was updated successfully"
-            redirect_to articles_path
+            redirect_to #
         else
         render 'edit'
         end
